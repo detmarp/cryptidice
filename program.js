@@ -14,7 +14,7 @@ export default class Program {
     this.lastTime = 0;
     this.startTime = 0;
     this.frame = 0;
-    document.title = 'Celest';
+    document.title = 'Cryptidice';
   }
 
   run() {

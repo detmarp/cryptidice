@@ -14,7 +14,7 @@ export default class ScreenMain {
   init() {
     this.ux = new Ux();
     this._render();
-    this.layout = new MainLayout(this.outer, this);
+    this.layout = new MainLayout(this.layoutWrapper, this);
     this.mediator = new Mediator(this.fiver, this.helper, this.layout);
     this.mediator.command('start');
   }
@@ -48,5 +48,13 @@ export default class ScreenMain {
       parent: this.parent,
       fill: true,
     });
+    this.outer.style.backgroundImage = 'url(data/tile01.png)';
+    this.outer.style.backgroundRepeat = 'repeat';
+
+    this.layoutWrapper = this.ux.div({
+      parent: this.outer,
+      fill: true,
+    });
+    this.layoutWrapper.style.inset = '4px';
   }
 }

@@ -11,6 +11,10 @@ export default class MainLayout {
 
     this.celest = new Celest(this.parent, this.size[0], this.size[1]);
     this.celest.init();
+    this.celest.inner.style.backgroundImage = 'url(data/bg01.png)';
+    this.celest.inner.style.backgroundSize = 'cover';
+    this.celest.inner.style.backgroundPosition = 'center';
+    this.celest.inner.style.backgroundRepeat = 'no-repeat';
 
     this.outer = this._div({
       parent: this.celest.inner
@@ -61,7 +65,7 @@ export default class MainLayout {
 
   _makeHeader(y, height) {
     this.header = this._div({
-      wireframe: true,
+      //wireframe: true,
       parent: this.outer,
       position: [0, y],
       size: [this.size[0], height]
@@ -134,7 +138,7 @@ export default class MainLayout {
 
   _makeHistory(y, height) {
     this.history = this._div({
-      wireframe: true,
+      //wireframe: true,
       parent: this.outer,
       position: [0, y],
       size: [this.size[0], height]
@@ -143,7 +147,7 @@ export default class MainLayout {
 
   _makeButtons(y, buttonsHeight, gap, sectionGap, buttonGap) {
     this.buttonArea = this._div({
-      wireframe: true,
+      //wireframe: true,
       parent: this.outer,
       position: [0, y],
       size: [this.size[0], buttonsHeight]
