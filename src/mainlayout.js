@@ -11,7 +11,7 @@ export default class MainLayout {
 
     this.celest = new Celest(this.parent, this.size[0], this.size[1]);
     this.celest.init();
-    this.celest.inner.style.backgroundImage = 'url(../data/bg01.png)';
+    this.celest.inner.style.backgroundImage = 'url(data/bg01.png)';
     this.celest.inner.style.backgroundSize = 'cover';
     this.celest.inner.style.backgroundPosition = 'center';
     this.celest.inner.style.backgroundRepeat = 'no-repeat';
