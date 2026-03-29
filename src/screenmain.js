@@ -48,7 +48,7 @@ export default class ScreenMain {
       parent: this.parent,
       fill: true,
     });
-    this.outer.style.backgroundImage = 'url(data/tile01.png)';
+    this.outer.style.backgroundImage = 'url(../data/tile01.png)';
     this.outer.style.backgroundRepeat = 'repeat';
 
     this.layoutWrapper = this.ux.div({

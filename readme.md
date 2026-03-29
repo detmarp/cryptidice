@@ -1,7 +1,3 @@
-[<< detmarp.github.io](https://detmarp.github.io)
-&nbsp; | &nbsp;
-[this page](https://detmarp.github.io/cryptidice)
-&nbsp; | &nbsp;
+# Cryptidice
 
-## Links
-- [cryptidice](.)
+Classic dice game with a new look.
